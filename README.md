@@ -2,7 +2,7 @@
 <img src="https://s3.amazonaws.com/after-school-assets/weasley.jpg" width="150" align="left" hspace="10">
 Ron Weasley is graduating from Hogwarts! He's got Percy Weasley's graduation invitations from a few years ago, which Percy wrote out by hand before sending them via owl post.
 
-The family of Percy Weasley proudly invite you to celebrate their graduation from Hogwarts on Saturday the 22nd of June. Festivities will be held at The Burrow. See you then!"
+**"The family of Percy Weasley proudly invite you to celebrate their graduation from Hogwarts on Saturday the 22nd of June. Festivities will be held at The Burrow. See you then!"**
 
 Percy could have saved a lot of time by using the magic of programming to automate this task. Help Ron get these invitations printed quickly so he can spend more time playing Quidditch.
 
