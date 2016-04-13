@@ -1,4 +1,3 @@
-import re #this allows regular expressions
 
 ### Challenge 1 - Percy Replacement:
 def percy_replacer(string_about_percy):
