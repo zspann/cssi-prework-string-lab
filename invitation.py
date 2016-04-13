@@ -6,11 +6,13 @@ def weasley_invitation(name,day,date,month):
 
 
 ### Challenge 2 - The Guest List
-#The function should remove any nicknames and return the first initial and last name of each guest.
+#The function should return the first initial and last name of each guest.
 
 def invitee_name(full_name):
-    name = re.sub(r"'.+?' ",'',full_name)
-    name=name.split()[0][0] + ". " + name.split()[1]
+    if len(full_name.split())==2:
+        name=full_name.split()[0][0] + ". " + full_name.split()[1]
+    else:
+        name=full_name.split()[0][0] + ". " + full_name.split()[2]
     return name
 
 
