@@ -26,7 +26,7 @@ H. Granger
 >>>print invitee_name("Alstor 'Mad-Eye' Moody")
 A. Moody
 ```
-**Hint**: Use the split() function to decide if the person has a middle name or not. They you can write a conditional statement to determine what to do in either case.
+**Hint**: Use the .split() function to decide if the person has a middle name or not. Then write a conditional statement to determine what to do in either case.
 
 ## Challenge 3 - Putting it all Together
 Most of Ron's work is done, now just write a final function, `create_invitation()` that takes two arguments, one for the guest's name and one for the invitation message. The guest's name should be complete capitalized and followed by a comma. After a line break, the invitation's message should be printed.
