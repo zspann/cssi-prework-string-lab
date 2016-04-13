@@ -26,19 +26,8 @@ H. Granger
 A. Moody
 ```
 
-To remove the single quotes, you will have to use regular expressions. Whenever we use regular expressions, you must import the 're' package into your Python script. Then you preface the pattern you want to match with the letter `r`.
-`.` - the dot stands for any character
-`+`- the plus sign will include anything after that character
-
-For example, to search for anything between `<` and `>`, use `<.+>`
-```python
-my_string="This <could be> the year that the Cubs win it all"
-new_string=re.sub(r"<.+>","is",my_string)
-```
-This looks for any string that starts with a `<` and ends with a `>` and replaces it with the string `is`.
-
 ## Challenge 3 - Putting it all Together
-Most of Ron's work is done, now just write a final function, `create_invitation()` that takes two arguments, one for the guest's name and one for the invitation message. The guest's name should be complete capitalized and followed by a comma. After a line break, the invitation's message should be printed.
+Most of Ron's work is done, now just write a final function, `create_invitation()` that takes two arguments, one for the guest's name and one for the invitation message. The guest's name should be completely capitalized and followed by a comma. After a line break, the invitation's message should be printed.
 
 ```python
 >>>print create_invitation(invitee_name("Alstor 'Mad-Eye' Moody"), weasley_invitation("Ron","Sunday", "May", "18th" ))
