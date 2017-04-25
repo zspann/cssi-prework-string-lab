@@ -2,7 +2,7 @@ import sys
 import unittest
 
 from invitation import *
-rons_message= "The family of Ron Weasley proudly invite you to celebrate their graduation from Hogwarts on Sunday the May of 18th. Festivities will be held at The Burrow. See you then!"
+rons_message= "The family of Ron Weasley proudly invite you to celebrate their graduation from Hogwarts on Sunday the 18th of May. Festivities will be held at The Burrow. See you then!"
 class TestInvitation(unittest.TestCase):
 
     def test_percy_replacer(self):
@@ -12,7 +12,7 @@ class TestInvitation(unittest.TestCase):
 
     def test_weasley_invitation(self):
         """It replaces the original string with 4 parameters"""
-        self.assertEqual(weasley_invitation("Ron","Sunday", "May", "18th" ), rons_message)
+        self.assertEqual(weasley_invitation("Ron","Sunday", "18th", "May" ), rons_message)
 
     def test_seating_location(self):
        self.assertEqual(seating_location("Potter"), "You have a reserved seat in the middle section.")
@@ -21,8 +21,8 @@ class TestInvitation(unittest.TestCase):
        self.assertEqual(seating_location("Granger"), "You have a reserved seat in the rear section.")
 
     def test_create_invitation(self):
-       self.assertEqual(create_invitation("Harry","Potter", weasley_invitation("Ron","Sunday", "May", "18th" )), "DEAR HARRY,\n"+rons_message+"\nP.S. You have a reserved seat in the middle section.")
-       self.assertEqual(create_invitation("Ginny","Weasley", weasley_invitation("Ron","Sunday", "May", "18th" )), "DEAR GINNY,\n"+rons_message+"\nP.S. You have a reserved seat in the front row.")
+       self.assertEqual(create_invitation("Harry","Potter", weasley_invitation("Ron", "Sunday", "18th", "May")), "DEAR HARRY,\n"+rons_message+"\nP.S. You have a reserved seat in the middle section.")
+       self.assertEqual(create_invitation("Ginny","Weasley", weasley_invitation("Ron", "Sunday", "18th", "May")), "DEAR GINNY,\n"+rons_message+"\nP.S. You have a reserved seat in the front row.")
 
 if __name__ == '__main__':
     unittest.main()
