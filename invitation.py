@@ -10,25 +10,14 @@ def weasley_invitation(name,day,date,month):
 ### Challenge 3 - Seating Location
 def seating_location(last_name):
     location = "middle section."
-    if last_name[:1] == "A":
+    rear_names = ["A", "B", "C", "D", "E", "F", "G"]
+    if last_name[0] in rear_names:
         location = "rear section."
-    elif last_name[:1] == "B":
-        location = "rear section."
-    elif last_name[:1] == "C":
-        location = "rear section."
-    elif last_name[:1] == "D":
-        location = "rear section."
-    elif last_name[:1] == "E":
-        location = "rear section."
-    elif last_name[:1] == "F":
-        location = "rear section."
-    elif last_name[:1] == "G":
-        location = "rear section."
-    elif last_name[:1] == "W":
+    elif last_name[0] == "W":
         location = "front row."
     return "You have a reserved seat in the {seat}".format(seat = location)
 
 ###Challenge 4 - All Together
 ### Passing only one of the two tests - not sure why?
 def create_invitation(first_name, last_name, message):
-    print "DEAR " + first_name.upper() + ",\n" + message + "\nP.S. " + seating_location(last_name)
+    return "DEAR " + first_name.upper() + ",\n" + message + "\nP.S. " + seating_location(last_name)
